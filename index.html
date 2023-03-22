@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">
-        <ul >
+        <ul v-if="myEmailArray.length == 10">
             <li v-for="email in myEmailArray">
               {{email}}
             </li>
